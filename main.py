@@ -29,7 +29,7 @@ else:
 globals().update(os.environ)
 
 def main():
-    fn_name_1(os.getenv('SOME_VAR'))
+    fn_name_1(SOME_VAR)
     fn_name_2()
 
 if __name__ == '__main__':
