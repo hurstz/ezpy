@@ -28,6 +28,9 @@ else:
 # import all the environment variables with .env names
 globals().update(os.environ)
 
-# imported function directly accessing .env variable
-fn_name_1(SOME_VAR)
-fn_name_2()
+def main():
+    fn_name_1(os.getenv('SOME_VAR'))
+    fn_name_2()
+
+if __name__ == '__main__':
+    main()
