@@ -29,6 +29,3 @@ def load_env():
         # Error message and exit if .env file not found
         print("ERROR: No .env file found")
         exit(1)
-
-    # Import all the environment variables with .env names
-    globals().update(os.environ)

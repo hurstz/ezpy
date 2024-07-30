@@ -1,5 +1,6 @@
 from .fn1 import fn_name_1
-from .fn2 import fn_name_2
+from .other_function import other_function
+from .third_function import third_function
 from .load_env import load_env
 
-__all__ = ['fn_name_1', 'fn_name_2', 'load_env']
+__all__ = ['fn_name_1', 'other_function', 'third_function', 'load_env']
